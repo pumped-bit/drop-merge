@@ -34,7 +34,7 @@
 
     // ===================== BOT CONFIG =====================
     // Replace with your bot username (without @) after creating it via BotFather
-    const BOT_USERNAME = 'YourBotUsername';
+    const BOT_USERNAME = 'FruitDropGameBot';
 
     // ======================== STATE ========================
     let canvas, ctx, nextCanvas, nextCtx;
