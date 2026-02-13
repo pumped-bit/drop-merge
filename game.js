@@ -29,7 +29,7 @@
 
     // ===================== ADS CONFIG =====================
     // Replace with your Adsgram block ID after registering at https://adsgram.ai
-    const ADSGRAM_BLOCK_ID = '8107176240';
+    const ADSGRAM_BLOCK_ID = '22899';
     const MAX_AD_CONTINUES = 2; // max continues per game session via ads
 
     // ===================== BOT CONFIG =====================
