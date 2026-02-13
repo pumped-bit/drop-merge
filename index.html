@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Drop & Merge</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"></script>
+    <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <div id="score-area">
+                <div id="score-label">SCORE</div>
+                <div id="score">0</div>
+            </div>
+            <div id="next-area">
+                <div id="next-label">NEXT</div>
+                <canvas id="next-canvas" width="60" height="60"></canvas>
+            </div>
+            <div id="best-area">
+                <div id="best-label">BEST</div>
+                <div id="best-score">0</div>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+
+        <div id="start-screen">
+            <div id="start-content">
+                <div id="game-title">Drop & Merge</div>
+                <div id="game-subtitle">Match fruits to evolve them!</div>
+                <div id="fruit-preview">🍒 🍇 🍊 🍎 🍐 🍋 🍑 🥭 🍈 🍉</div>
+                <button id="play-btn">Play</button>
+            </div>
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <div id="game-over-content">
+                <div id="game-over-title">Game Over</div>
+                <div id="final-score-label">Score</div>
+                <div id="final-score">0</div>
+                <div id="new-best" class="hidden">New Best!</div>
+                <div id="game-over-buttons">
+                    <button id="continue-ad-btn">Watch Ad to Continue</button>
+                    <button id="restart-btn">Play Again</button>
+                    <button id="challenge-btn">Challenge a Friend</button>
+                    <button id="share-btn">Share Score</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
